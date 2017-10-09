@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Know Your Colors</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="best_score">BEST:</string>
+    <string name="score">SCORE:</string>
+    <string name="game_over">GAME OVER!</string>
+    <string name="play_again">Tap anywhere\nto play again</string>
+    <string name="changed_color_hint">Was looking for</string>
+    <string name="original_color_hint">You pressed</string>
+    <string name="original_desc">original color gameOver screen</string>
+    <string name="changed_desc">changed color gameOver screen</string>
+    <string name="divider">divider</string>
+    <string name="close_help">CLOSE AND PLAY</string>
+    <string name="show_help">Don\'t show this window again</string>
+    <string name="how_to_play">One of the palettes is not the same color as the others.\n\nHere different color square is shown by check mark</string>
+    <string name="how_to_play_title">How to play?</string>
+
+</resources>

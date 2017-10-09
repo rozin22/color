@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="15sp"
+        android:id="@+id/help_hint"
+        android:textSize="20sp"
+        android:text="@string/how_to_play"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/grid_layout"
+        android:layout_below="@id/help_hint"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <GridView
+            android:layout_gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:id="@+id/grid_view"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3">
+        </GridView>
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_above="@+id/close_help"
+        android:layout_marginLeft="15sp"
+        android:id="@+id/show_help"
+        android:checked="true"
+        android:text="@string/show_help"
+        android:textSize="14sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@id/close_help"
+        android:text="@string/close_help"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

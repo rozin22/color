@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/gameOver_layout"
+        android:layout_width="match_parent"
+        android:baselineAligned="false"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:contentDescription="@string/original_desc"
+                android:id="@+id/original_color"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <TextView
+                android:id="@+id/original_color_hint"
+                android:layout_marginTop="20sp"
+                android:text="@string/original_color_hint"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top|center_horizontal"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/original_color_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:layout_marginBottom="100sp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:contentDescription="@string/changed_desc"
+                android:id="@+id/changed_color"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"/>
+
+            <TextView
+                android:id="@+id/changed_color_hint"
+                android:layout_marginTop="20sp"
+                android:text="@string/changed_color_hint"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top|center_horizontal"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/changed_color_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gameOver_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/game_over"
+        android:fontFamily="sans-serif"
+        android:textSize="40sp"
+        android:layout_marginBottom="100sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/gameOver_score"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tap_anywhere"
+        android:text="@string/play_again"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textSize="25sp"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="italic"
+        android:gravity="bottom|center"
+        android:layout_gravity="bottom"/>
+</RelativeLayout>
